@@ -1,0 +1,68 @@
+:root{
+    --primary: #50a48f;
+    --primarylight: rgba(80, 164, 153, 0.3);
+    --tonal : #daffff;
+    --outline: #fffbfe;
+    --outline-color: #747e7d;
+}
+
+.btn{
+    --height : 40px;
+    font-family: sans-serif; 
+    line-height: var(--height)/2;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    height: var(--height);
+    border-radius: calc(var(--height)/2);
+    padding: 0 24px;
+    margin: 15px;
+    text-align: center;
+    border: none;
+}
+
+.btn > *{
+    vertical-align: middle;
+}
+
+.btn.filled{
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+
+}
+
+.btn.tonal{
+    background-color: var(--tonal);
+    color: #1E192B;
+    border: none;
+}
+
+.btn.outlined{
+    background-color: var(--outline);
+    color: #306356;
+    border: 1px solid #50a48f;
+}
+
+.btn.text{
+    color: var(--primary);
+    padding: 0 12px;
+    border: none;
+}
+.btn.text:focus{
+    background-color: var(--primarylight);
+    color: var(--primary);
+    border: none;
+}
+.btn.text.icon {
+    padding: 0 16px 0 12px
+    }
+
+.btn.filled.icon,.btn.tonal.icon,.btn.outlined.icon{
+    padding-left: 16px;
+}
+
+.ic {
+    font-size: 18px;
+    padding-right: 8px;
+}
