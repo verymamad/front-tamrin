@@ -1,0 +1,134 @@
+:root{
+    --primary: #50a48f;
+    --primarylight: rgba(80, 164, 153, 0.3);
+    --tonal : #daffff;
+    --outline: #fffbfe;
+    --outline-color: #747e7d;
+}
+
+.btn{
+    --height : 40px;
+    font-family: sans-serif; 
+    line-height: var(--height)/2;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    height: var(--height);
+    border-radius: calc(var(--height)/2);
+    padding: 0 24px;
+    margin: 15px;
+    text-align: center;
+    border: none;
+}
+
+.btn > *{
+    vertical-align: middle;
+}
+
+.btn.filled{
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+
+}
+
+/* ----------------------------------------------------situations---------------------------------------------------- */
+.btn.filled:hover {
+    background-color: #3e8372;
+    transition: 0.2s;
+}
+
+.btn.filled:focus {
+    background-color: #3e8372;
+}
+
+.btn.filled:active {
+    background-color: #1f423a;
+    transition: 0.2s;
+}
+
+.btn.filled:disabled {
+    background-color: #3f3f3f4f;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.btn.tonal{
+    background-color: var(--tonal);
+    color: #306356;
+    border: none;
+}
+
+/* ----------------------------------------------------situations---------------------------------------------------- */
+.btn.tonal:hover {
+    background-color: #c3e4e4;
+    transition: 0.2s;
+}
+
+.btn.tonal:focus {
+    background-color: #c3e4e4;
+}
+
+.btn.tonal:active {
+    background-color: #95b9b9;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn.tonal:disabled {
+    background-color: #3f3f3f4f;
+    color: white;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.btn.outlined{
+    background-color: var(--outline);
+    color: #306356;
+    border: 1px solid #50a48f;
+}
+
+/* ----------------------------------------------------situations---------------------------------------------------- */
+.btn.outlined:hover {
+    background-color: #f0f0f0;
+    transition: 0.2s;
+}
+
+.btn.outlined:focus {
+    background-color: #f0f0f0;
+}
+
+.btn.outlined:active {
+    background-color: #8ab4b4;
+    border: solid transparent;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn.outlined:disabled {
+    background-color: #3f3f3f4f;
+    color: white;
+    border: solid transparent;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+.btn.text{
+    color: var(--primary);
+    padding: 0 12px;
+    border: none;
+}
+/* ----------------------------------------------------situations---------------------------------------------------- */
+.btn.text:hover {
+    background-color: #eefffb;
+    transition: 0.2s;
+}
+
+.btn.text:focus {
+    background-color: #eefffb;
+}
+
+.btn.text:active {
+    background-color: #d8e9e5;
+    transition: 0.2s;
+}
+
+.btn.text:disabled {
+    background-color: #3f3f3f4f;
+    color: white;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
